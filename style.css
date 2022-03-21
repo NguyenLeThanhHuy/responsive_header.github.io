@@ -5,8 +5,7 @@
 }
 
 body {
-   overflow: hidden; 
-   width: 100vw;
+   overflow: hidden;
 }
 
 .header {
@@ -142,7 +141,7 @@ ul li #headIcon {
 
   .Navbar ul {
     position: absolute;
-    width: 100%;
+    width: 91.8%;
     height: 100vh;
     background-color: black;
   }
