@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Header</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./fontawesome-free-6.0.0-web/css/all.css" />
+  </head>
+  <body>
+    <script>
+      const toggle = function() {
+        document.getElementById('nav').classList.toggle('navactive');
+      }
+    </script>
+    <div class="header">
+
+        <div class="brand">
+            <i class="fa-brands fa-github"></i>
+            <h1>Brand</h1>
+          </div>
+          <i class="fa-solid fa-bars" id="menuIcon" onclick="toggle()"></i>
+      <div class="Navbar" id="nav">
+        <div class="SearchBox">
+          <input type="text" placeholder="Search here ..." />
+          <i class="fa-solid fa-magnifying-glass" id="SearchIcon"></i>
+        </div>
+      
+      <ul>
+        <li> <i class="fa-solid fa-house-chimney" id="headIcon" ></i> <a href="#"> Home </a></li>
+        <li> <i class="fa-solid fa-circle-user" id="headIcon" ></i> <a href="#"> Profile </a></li>
+        <li> <i class="fa-solid fa-circle-question" id="headIcon" ></i> <a href="#"></i> Help </a></li>
+        <li> <i class="fa-solid fa-lock" id="headIcon" ></i> <a href="#"> Account </a></li>
+        <li> <i class="fa-solid fa-right-from-bracket" id="headIcon" ></i> <a href="#"> Sign Out </a></li>
+      </ul>
+   
+    </div>
+  </body>
+</html>
