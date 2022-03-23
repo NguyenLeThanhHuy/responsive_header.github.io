@@ -5,7 +5,7 @@
 }
 
 body {
-   overflow: hidden;
+  overflow: hidden;
 }
 
 .header {
@@ -101,6 +101,10 @@ ul li a {
   font-size: 18px;
 }
 
+button {
+  display: none;
+}
+
 ul li a:active,
 :focus {
   text-decoration: underline;
@@ -112,13 +116,6 @@ ul li #headIcon {
   font-size: 22px;
 }
 
-#menuIcon {
-  display: none;
-}
-
-.Navbar.navactive {
-  display: inline;
-}
 
 @media (max-width: 768px) {
   .Navbar {
@@ -128,16 +125,18 @@ ul li #headIcon {
     display: none;
   }
 
-  #menuIcon {
-    display: inline;
+  button {
     position: fixed;
     right: 50px;
-    font-size: 25px;
-    padding: 1%;
+    display: inline;
+    font-size: 20px;
+    padding: 2%;
     cursor: pointer;
     border: 1px solid #999;
     border-radius: 5px;
+    z-index: 2298;
   }
+
 
   .Navbar ul {
     position: absolute;
@@ -155,7 +154,7 @@ ul li #headIcon {
     position: relative;
     top: 50px;
     margin-left: 0;
-    padding: 5%;
+    padding: 3%;
   }
   ul li #headIcon {
     display: inline-block;
